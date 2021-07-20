@@ -35,7 +35,7 @@ already have one:
 3. Locate the **`Get Started`** button to Start for Free with the "Pay as you go" plan (no credit card needed).
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-select-plan.png)
 
-4. Define a **`database name`**, **`keyspace name`** and select a **`cloud provider`** and **`region`**.
+4. Define a **`database name`** and a **`keyspace name`**. Then select a **`cloud provider`** and a **`region`**.
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-create-db.png)
 
 5. Your Astra DB will be ready when the status will change from *`Pending`* to **`Active`** 💥💥💥 
