@@ -70,13 +70,13 @@ already have one:
 
 3. Set your Astra database details by running the gitpod setup script in the Gitpod terminal at the bottom of the screen:
 ```sh
-./gitpod-setup.sh
+./setup-gitpod.sh
 ```
 ![image](https://user-images.githubusercontent.com/3254549/88752966-f7c7c300-d10f-11ea-9a78-d2a9707192bd.png)
 
 4. Run the app and view the output in the terminal:
 ```sh
-mvn spring-boot:run 
+mvn spring-boot:run
 ```
 
 <!--- ENDEXCLUDE --->

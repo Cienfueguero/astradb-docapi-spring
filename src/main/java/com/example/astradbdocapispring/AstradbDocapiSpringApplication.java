@@ -33,7 +33,7 @@ public class AstradbDocapiSpringApplication {
   @Bean
   public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
     HttpHeaders headers = new HttpHeaders();
-    headers.set("X-Cassandra-Token", env.getProperty("ASTRA_DB_TOKEN"));
+    headers.set("X-Cassandra-Token", env.getProperty("ASTRA_DB_APPLICATION_TOKEN"));
 	  headers.add("Content-Type","application/JSON");
 
     HttpEntity<String> httpEntity = new HttpEntity<String>(headers);
