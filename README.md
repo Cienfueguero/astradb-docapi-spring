@@ -29,22 +29,26 @@ Let's do some initial setup.
 already have one:
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-register-basic-auth.png)
 
-2. On the home page. Locate the button **`Add Database`**
+2. On the home page. Locate the button **`Create Database`**
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-dashboard.png)
 
-3. Pick **free plan** and a **region** close to you, click configure.
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-create-db-1-top.png)
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-create-db-1-bottom.png)
+3. Locate the **`Get Started`** button to Start for Free with the "Pay as you go" plan (no credit card needed).
+![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-select-plan.png)
 
-4. Define a **database name**, **keyspace name** and **credentials** (Take note of the DB Password)
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-create-db-2.png)
+4. Define a **`database name`**, **`keyspace name`** and select a **`cloud provider`** and **`region`**.
+![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-create-db.png)
 
 5. Your Astra DB will be ready when the status will change from *`Pending`* to **`Active`** 💥💥💥 
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-active.png)
 
-6. After your database is provisioned, head to the `Connect` screen and copy your connection 
-information (we'll need this later!):
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-connect.png)
+6. After your database is provisioned, we need to generate an Application Token for our app credentials. Activate your **`Current Organization`** dropdown menu, select **`Organization Settings`**, and then **`Token Management`**.
+![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-settings.png)
+
+7. Select **`Admin User`** for the role for this Sample App and then **`Generate Token`**. To save the credential for later use, **`Download Token Details`** to a **`.csv`** file.
+![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-connect.png)
+
+8. After you have your Application Token, head to the database connect screen and copy the connection information that we'll need later. We'll replace **<app_toke>** with the **`Token`** value that is part of your Application Token.
+![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-connect.png)
 
 ### Github
 1. Click `Use this template` at the top of the [GitHub Repository](https://github.com/Cienfueguero/astradb-docapi-spring):
