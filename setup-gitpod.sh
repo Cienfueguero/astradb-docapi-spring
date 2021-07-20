@@ -29,6 +29,7 @@ function setupTable() {
     gp env ASTRA_DB_APPLICATION_TOKEN="${ASTRA_DB_APPLICATION_TOKEN// /}" &>/dev/null
   fi
 
+  # Update the current terminal session with the latest set of persistent environment variables
   eval $(gp env -e)
 
   # Create tables

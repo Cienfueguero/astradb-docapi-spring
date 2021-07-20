@@ -50,7 +50,7 @@ public class AstradbDocapiSpringApplication {
         ".apps.astra.datastax.com/api/rest/v2/namespaces/" +
         env.getProperty("ASTRA_DB_KEYSPACE") +
         "/collections/persons/" +
-		docId,
+		    docId,
         HttpMethod.GET,
         httpEntity,
         Persons.class

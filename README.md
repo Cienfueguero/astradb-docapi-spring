@@ -72,11 +72,13 @@ already have one:
 ```sh
 ./setup-gitpod.sh
 ```
+Note: If a permissions denied error message is received, then run `chmod 777 setup*` and try again.
 ![image](https://user-images.githubusercontent.com/3254549/88752966-f7c7c300-d10f-11ea-9a78-d2a9707192bd.png)
 
 4. Run the app and view the output in the terminal:
 ```sh
 mvn spring-boot:run
 ```
+Note: If an error of type `I/O error on GET request for "https://null-null.apps.astra.datastax.com...` is received, then run `eval $(gp env -e)` and try again.
 
 <!--- ENDEXCLUDE --->

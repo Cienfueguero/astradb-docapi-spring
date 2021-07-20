@@ -25,8 +25,6 @@ function setupTable() {
     export ASTRA_DB_APPLICATION_TOKEN="${ASTRA_DB_APPLICATION_TOKEN// /}" &>/dev/null
   fi
 
-  eval $(env -e)
-
   # Create tables
   echo "Creating Astra tables..."
   curl -s --request PUT \
