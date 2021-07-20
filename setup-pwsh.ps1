@@ -12,7 +12,7 @@ function setupTable() {
   $Env:ASTRA_DB_KEYSPACE = Read-Host `
   "What is your Astra keyspace name?"
 
-  $Env:ASTRA_DB_TOKEN = Read-Host `
+  $Env:ASTRA_DB_APPLICATION_TOKEN = Read-Host `
   "What is your Astra token? `
   Example: AstraCS:ZJqbROaTQlPu"
 
@@ -21,13 +21,23 @@ function setupTable() {
 
   $headers = @{
     'content-type' = 'application/json'
-    'x-cassandra-token' = $Env:ASTRA_DB_TOKEN
+    'x-cassandra-token' = $Env:ASTRA_DB_APPLICATION_TOKEN
   }
 
   Invoke-RestMethod "https://$Env:ASTRA_DB_ID-$Env:ASTRA_DB_REGION.apps.astra.datastax.com/api/rest/v2/namespaces/$Env:ASTRA_DB_KEYSPACE/collections/persons/1" `
     -Method 'PUT' `
     -Headers $headers `
     -Body '{"firstName":"Geni","lastName":"Gomez"}'
+
+  Invoke-RestMethod "https://$Env:ASTRA_DB_ID-$Env:ASTRA_DB_REGION.apps.astra.datastax.com/api/rest/v2/namespaces/$Env:ASTRA_DB_KEYSPACE/collections/persons/2" `
+    -Method 'PUT' `
+    -Headers $headers `
+    -Body '{"firstName":"Steven","lastName":"Matison"}'
+
+  Invoke-RestMethod "https://$Env:ASTRA_DB_ID-$Env:ASTRA_DB_REGION.apps.astra.datastax.com/api/rest/v2/namespaces/$Env:ASTRA_DB_KEYSPACE/collections/persons/3" `
+    -Method 'PUT' `
+    -Headers $headers `
+    -Body '{"firstName":"Ricardo","lastName":"Valdes"}'
 }
 
 setupTable
