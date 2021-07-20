@@ -14,7 +14,7 @@
 	<name>astradb-docapi-spring</name>
 	<description>Demo project for Spring Boot using the Astra DB Document API</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
